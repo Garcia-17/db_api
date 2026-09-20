@@ -1,0 +1,16 @@
+[project]
+name = "db-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "asyncmy>=0.2.14",
+    "fastapi[standard-no-fastapi-cloud-cli]>=0.141.1",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "sqlalchemy>=2.0.54",
+]
+
+[tool.fastapi]
+entrypoint = "main:app"
